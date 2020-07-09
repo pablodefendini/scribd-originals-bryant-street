@@ -53,7 +53,7 @@
 				<div id="inner-header" class="wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-						<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="wp-content/themes/scribd-originals-bryant-street/library/images/logo.svg" id=logo ></a>
+						<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo home_url(); ?>/wp-content/themes/scribd-originals-bryant-street/library/images/logo.svg" id=logo ></a>
 
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
@@ -69,7 +69,7 @@
 								<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Newsletter signup" required>
 							    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 							    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0c60ee4cf297215c61d55e861_afc8f5cf09" tabindex="-1" value=""></div>
-							    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+							    <div class="clear"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 							    </div>
 							</form>
 						</div>

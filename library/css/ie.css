@@ -248,6 +248,37 @@ FOOTER STYLES
 check your menus here. do they look good?
 do they need tweaking?
 */
+.footer img {
+  margin: 1em 0;
+  max-width: 260px;
+}
+
+.footer .signup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .signup #mc_embed_signup {
+  margin: 2em 0 0 1em;
+}
+
+.footer .footer-nav {
+  display: flex;
+}
+
+.footer .footer-nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .footer-nav ul li {
+  margin: .4em 0;
+}
+
+.footer .footer-nav ul li a {
+  margin: 1em;
+}
+
 /* end .footer-links */
 /******************************************************************
 Site Name:

@@ -500,7 +500,7 @@ POSTS & CONTENT STYLES
 				font-size: 0.9em;
 				padding: 1.5em;
 				margin: 0 0 1.5em;
-				border-radius: 3px;
+				//border-radius: 3px;
 			}
 
 		} /* end .entry-content */
@@ -572,7 +572,7 @@ PAGE NAVI STYLES
       white-space: nowrap;
       padding: 0;
       clear: both;
-      border-radius: 3px;
+      //border-radius: 3px;
     }
 
     li {
@@ -919,7 +919,7 @@ SIDEBARS & ASIDES
 		padding: 1.5em;
 		text-align: center;
 		border: 1px solid $border-color;
-		border-radius: 2px;
+		//border-radius: 2px;
 		margin-bottom: 1.5em;
 	}
 
@@ -928,9 +928,37 @@ FOOTER STYLES
 *********************/
 
 .footer {
-	clear: both;
+	color: $white;
 	background-color: $black;
-	color: $light-gray;
+	@include css-gradient($from: $key-color, $to: $key-color-two);
+	#mc_embed_signup_scroll {
+		display: flex;
+		margin-bottom: 1em;
+	}
+
+	h2 {
+		margin-bottom: 0;
+	}
+	h3 {
+		margin-top: 0;
+	}
+
+	img {
+		//float: right;
+		margin: 1em 0;
+		width: 100%;
+	}
+
+	#footeritems {
+		text-align: right;
+		li {
+			margin: 1em 0;
+			a {
+				@extend %menu-text;
+				padding-top: 1em;
+			}
+		}
+	}
 }
 
 	/*

@@ -111,6 +111,34 @@ FOOTER STYLES
 check your menus here. do they look good?
 do they need tweaking?
 */
+
+.footer {
+	img {
+		margin: 1em 0;
+		max-width: 260px;
+	}
+	.signup {
+		display: flex;
+		justify-content: space-between;
+		#mc_embed_signup {
+			margin: 2em 0 0 1em;
+		}
+	}
+
+	.footer-nav {
+		display: flex;
+		ul {
+			display: flex;
+			justify-content: space-around;
+			li {
+				margin: .4em 0;
+				a {
+					margin: 1em;
+				}
+			}
+		}
+	}
+}
 .footer-links {
 	ul {
 		li {}
