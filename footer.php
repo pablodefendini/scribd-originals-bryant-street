@@ -1,9 +1,9 @@
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
-				<div id="inner-footer" class="wrap cf">
+				<div id="inner-footer">
 
 
-				<div class="signup">
+				<div class="signup wrap cf">
 					<div class="call-to-action">
 						<h2>Sign up for our newsletter</h2>
 						<h3>CTA Body  TK</h3>
@@ -26,7 +26,7 @@
 
 				</div>
 
-				<div class="footer-nav">
+				<div class="footer-nav wrap cf">
 					<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo home_url(); ?>/wp-content/themes/scribd-originals-bryant-street/library/images/logo.svg" id=logo ></a>
 
 					<nav role="navigation">
@@ -35,7 +35,8 @@
 					</nav>
 				</div>
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+					<p class="source-org copyright">Copyright &copy; <?php echo date('Y'); ?> Scribd, Inc.<br/>
+					 Privacy Policy | Terms of Service</p>
 
 				</div>
 

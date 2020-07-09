@@ -2077,6 +2077,13 @@ FOOTER STYLES
 	view.
 	*/
 /* end .footer-links */
+.copyright {
+  font-size: .8em;
+  text-align: center;
+  padding-bottom: 4em;
+  margin-bottom: -2em;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -2174,6 +2181,7 @@ do they need tweaking?
   }
   .footer .footer-nav {
     display: flex;
+    justify-content: space-between;
   }
   .footer .footer-nav ul {
     display: flex;
@@ -2183,7 +2191,7 @@ do they need tweaking?
     margin: .4em 0;
   }
   .footer .footer-nav ul li a {
-    margin: 1em;
+    margin: 1em .5em;
   }
   /* end .footer-links */
 }

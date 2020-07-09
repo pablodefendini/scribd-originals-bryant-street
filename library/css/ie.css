@@ -264,6 +264,7 @@ do they need tweaking?
 
 .footer .footer-nav {
   display: flex;
+  justify-content: space-between;
 }
 
 .footer .footer-nav ul {
@@ -276,7 +277,7 @@ do they need tweaking?
 }
 
 .footer .footer-nav ul li a {
-  margin: 1em;
+  margin: 1em .5em;
 }
 
 /* end .footer-links */
