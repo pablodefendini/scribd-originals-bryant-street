@@ -156,6 +156,8 @@ HEADER STYLES
 	background-color: $black;
 	@include css-gradient($from: $key-color, $to: $key-color-two);
 	mix-blend-mode: multiply;
+	//overflow: visible;
+	//max-height: 63px;
 	#mc_embed_signup_scroll {
 		display: none;
 	}
@@ -170,7 +172,9 @@ HEADER STYLES
 		}
 		nav {
 			align-self: center;
-			margin-left: 2em;
+			margin-left: .5em;
+			text-align: right;
+			width: 7em;
 		}
 	}
 
@@ -204,11 +208,12 @@ and more scalable.
 
 	li {
 
+
 		a {
-			display: block;
-			color: $white;
-			text-decoration: none;
-			padding: 0.75em;
+			//display: block;
+			//color: $white;
+			//text-decoration: none;
+			//padding: 0.75em;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -238,7 +243,7 @@ and more scalable.
 			li {
 
 				a {
-					padding-left: 30px;
+					//padding-left: 30px;
 
 					&:hover,
 					&:focus {}
@@ -268,6 +273,39 @@ and more scalable.
 
 } /* end .nav */
 
+#hamnav {
+  width: 100%;
+  background: #000;
+}
+
+/* Hide Hamburger */
+#hamburger {
+	display: none;
+}
+
+/* Hide Hamburger */
+#hamburgericon {
+	color: $white;
+	font-size: 1.6em;
+	text-align: right;
+}
+
+/* Toggle Show/Hide Menu */
+#hamitems {
+	display: none;
+	text-align: right;
+	li {
+		margin: 1em 0;
+		a {
+			@extend %menu-text;
+			padding-top: 1em;
+		}
+	}
+}
+#hamburger:checked ~ #hamitems {
+	display: block;
+	//position: static;
+}
 
 /*********************
 POSTS & CONTENT STYLES

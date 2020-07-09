@@ -580,7 +580,7 @@ p {
   font-feature-settings: "liga", "dlig";
 }
 
-#submit, .comment-reply-link, input[type="submit"] {
+#hamitems li a, #submit, .comment-reply-link, input[type="submit"] {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1502,7 +1502,9 @@ HEADER STYLES
 
 #inner-header nav {
   align-self: center;
-  margin-left: 2em;
+  margin-left: .5em;
+  text-align: right;
+  width: 7em;
 }
 
 #logo a {
@@ -1542,10 +1544,6 @@ and more scalable.
 }
 
 .nav li a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  padding: 0.75em;
   /*
 			remember this is for mobile ONLY, so there's no need
 			to even declare hover styles here, you can do it in
@@ -1554,12 +1552,42 @@ and more scalable.
 			*/
 }
 
-.nav li ul.sub-menu li a,
-.nav li ul.children li a {
-  padding-left: 30px;
+/* end .nav */
+#hamnav {
+  width: 100%;
+  background: #000;
 }
 
-/* end .nav */
+/* Hide Hamburger */
+#hamburger {
+  display: none;
+}
+
+/* Hide Hamburger */
+#hamburgericon {
+  color: #fff;
+  font-size: 1.6em;
+  text-align: right;
+}
+
+/* Toggle Show/Hide Menu */
+#hamitems {
+  display: none;
+  text-align: right;
+}
+
+#hamitems li {
+  margin: 1em 0;
+}
+
+#hamitems li a {
+  padding-top: 1em;
+}
+
+#hamburger:checked ~ #hamitems {
+  display: block;
+}
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/

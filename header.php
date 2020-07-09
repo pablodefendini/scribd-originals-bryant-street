@@ -77,25 +77,15 @@
 						<!--End mc_embed_signup-->
 
 
-						<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-							<svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<line x1="2" y1="2" x2="23" y2="2" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-								<line x1="2" y1="11" x2="23" y2="11" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-								<line x1="2" y1="20" x2="23" y2="20" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-							</svg>
-							<?php wp_nav_menu(array(
-	    					         'container' => false,                           // remove nav container
-	    					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-	    					         'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-	    					         'menu_class' => 'nav top-nav cf',               // adding custom nav class
-	    					         'theme_location' => 'main-nav',                 // where it's located in the theme
-	    					         'before' => '',                                 // before the menu
-	        			               'after' => '',                                  // after the menu
-	        			               'link_before' => '',                            // before each link
-	        			               'link_after' => '',                             // after each link
-	        			               'depth' => 0,                                   // limit the depth of the nav
-	    					         'fallback_cb' => ''                             // fallback function (if there is one)
-							)); ?>
+						<nav id="#hamnav" role="navigation">
+
+							<label for="hamburger" id="hamburgericon">&#9776;</label>
+      				<input type="checkbox" id="hamburger"/>
+
+							<?php wp_nav_menu(array('menu' => __( 'Main Menu'), 'theme_location' => 'main_nav', 'container' => '', 'menu_id' => 'hamitems')); ?>
+
+
+						</nav>
 
 						</nav>
 					</div>
