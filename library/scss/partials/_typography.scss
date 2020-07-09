@@ -55,8 +55,8 @@ $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
 /*
  i imported this one in the functions file so bones would look sweet.
  don't forget to remove it for your site.
-*/
-$raleway:              'Raleway', $sans-serif;
+
+$raleway:              $sans-serif;*/
 
 /*
 some nice typographical defaults
@@ -82,4 +82,15 @@ p {
       -ms-font-feature-settings: "liga", "dlig";
        -o-font-feature-settings: "liga", "dlig";
           font-feature-settings: "liga", "dlig";
+}
+
+%menu-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }

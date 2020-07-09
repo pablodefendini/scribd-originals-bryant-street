@@ -34,14 +34,18 @@ $tan:               #eceee5;
 
 $green:             #7dd667;
 
-$bones-pink:        #f01d4f;
+$key-color:         #ED1F5A;
+$key-color-two:     #630460;
+
 $blue:              #2980b9;
 
-$link-color:        $green;
+$link-color:        $key-color;
 $link-hover:        darken($link-color, 9%);
 
-$border-color:      #ccc;
+$border-color:      $white;
 $disabled-gray:     #cfcfcf;
+
+$border:            2px solid $border-color;
 
 
 /*

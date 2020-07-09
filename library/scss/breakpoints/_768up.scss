@@ -24,14 +24,18 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 760px;
+	//width: 760px;
 }
 
 /*********************
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+	#mc_embed_signup_scroll {
+		display: flex;
+	}
+}
 
 	#logo {}
 
@@ -284,4 +288,3 @@ mobile. Make sure to double check these!
 		}
 	}
 } /* end .footer-links */
-

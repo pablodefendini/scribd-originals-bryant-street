@@ -557,7 +557,8 @@ I've edited it a bit, but it's a nice starting point.
 /*
  i imported this one in the functions file so bones would look sweet.
  don't forget to remove it for your site.
-*/
+
+$raleway:              $sans-serif;*/
 /*
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
@@ -577,6 +578,17 @@ p {
   -ms-font-feature-settings: "liga", "dlig";
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
+}
+
+#submit, .comment-reply-link, input[type="submit"] {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 /******************************************************************
@@ -973,49 +985,28 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.blue-btn, #submit, .comment-reply-link {
+#submit, .comment-reply-link, input[type="submit"] {
   display: inline-block;
   position: relative;
-  font-family: "Raleway", Helvetica, sans-serif;
   text-decoration: none;
-  color: #fff;
-  font-size: 0.9em;
-  font-size: 34px;
-  line-height: 34px;
-  font-weight: normal;
-  padding: 0 24px;
-  border-radius: 4px;
-  border: 0;
+  padding: 8px 24px;
+  margin-top: 1px;
+  border: 2px solid #fff;
   cursor: pointer;
+  background-color: #ED1F5A;
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out;
 }
 
-.blue-btn:hover, #submit:hover, .comment-reply-link:hover, .blue-btn:focus, #submit:focus, .comment-reply-link:focus {
+#submit:hover, .comment-reply-link:hover, input[type="submit"]:hover, #submit:focus, .comment-reply-link:focus, input[type="submit"]:focus {
   color: #fff;
   text-decoration: none;
   outline: none;
+  background-color: #630460;
 }
 
-.blue-btn:active, #submit:active, .comment-reply-link:active {
+#submit:active, .comment-reply-link:active, input[type="submit"]:active {
   top: 1px;
-}
-
-/*
-An example button.
-You can use this example if you want. Just replace all the variables
-and it will create a button dependant on those variables.
-*/
-.blue-btn, #submit, .comment-reply-link {
-  background-color: #2980b9;
-}
-
-.blue-btn:hover, #submit:hover, .comment-reply-link:hover, .blue-btn:focus, #submit:focus, .comment-reply-link:focus {
-  background-color: #2574a8;
-}
-
-.blue-btn:active, #submit:active, .comment-reply-link:active {
-  background-color: #2472a4;
 }
 
 /******************************************************************
@@ -1072,20 +1063,16 @@ select,
 textarea,
 .field {
   display: block;
-  height: 40px;
-  line-height: 1em;
-  padding: 0 12px;
-  margin-bottom: 14px;
-  font-size: 1em;
-  color: #5c6b80;
-  border-radius: 3px;
-  vertical-align: middle;
-  box-shadow: none;
-  border: 0;
+  height: 36px;
+  padding: 0 24px;
+  margin-top: 1px;
+  text-align: center;
+  margin-right: .5em;
+  color: #fff;
+  border: 2px solid #fff;
   width: 100%;
-  max-width: 400px;
-  font-family: "Raleway", "Raleway", Helvetica, sans-serif;
-  background-color: #eaedf2;
+  max-width: 300px;
+  background-color: rgba(255, 255, 255, 0.3);
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out;
 }
@@ -1123,7 +1110,6 @@ textarea:focus,
 textarea:active,
 .field:focus,
 .field:active {
-  background-color: #f7f8fa;
   outline: none;
 }
 
@@ -1337,6 +1323,10 @@ select {
   background-position: 97.5% center;
 }
 
+::placeholder {
+  color: #fff;
+}
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
@@ -1359,7 +1349,7 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", Helvetica, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #5c6b80;
@@ -1419,14 +1409,14 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #7dd667;
+  color: #ED1F5A;
   /* on hover */
   /* on click */
   /* mobile tap color */
 }
 
 a:hover, a:focus, a:visited:hover, a:visited:focus {
-  color: #5ecc43;
+  color: #ce1147;
 }
 
 a:link, a:visited:link {
@@ -1493,16 +1483,34 @@ HEADER STYLES
   background-image: -moz-linear-gradient(276.22deg, #ED1F5A, #630460);
   background-image: -o-linear-gradient(276.22deg, #ED1F5A, #630460);
   background-image: linear-gradient(276.22deg, #ED1F5A, #630460);
-  mix-blend-mode: darken;
-  position: static;
+  mix-blend-mode: multiply;
 }
 
-#logo {
-  margin: 1em 0em 0.75em;
+.header #mc_embed_signup_scroll {
+  display: none;
+}
+
+#inner-header {
+  display: flex;
+  padding: .75em 0 .75em;
+  justify-content: space-between;
+}
+
+#inner-header .sign-and-nav {
+  display: flex;
+}
+
+#inner-header nav {
+  align-self: center;
+  margin-left: 2em;
 }
 
 #logo a {
   color: #fff;
+}
+
+#id {
+  align-self: flex-end;
 }
 
 /*********************
@@ -1985,7 +1993,7 @@ SIDEBARS & ASIDES
   background-color: #fff;
   padding: 1.5em;
   text-align: center;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   border-radius: 2px;
   margin-bottom: 1.5em;
 }
@@ -2038,9 +2046,6 @@ You can't use @extend within media queries
 anymore, so just be aware that if you drop
 them in here, they won't work.
 */
-  .wrap {
-    width: 100px;
-  }
   /*********************
 NAVIGATION STYLES
 *********************/
@@ -2125,12 +2130,12 @@ GENERAL STYLES
   /*********************
 LAYOUT & GRID STYLES
 *********************/
-  .wrap {
-    width: 760px;
-  }
   /*********************
 HEADER STYLES
 *********************/
+  .header #mc_embed_signup_scroll {
+    display: flex;
+  }
   /*********************
 NAVIGATION STYLES
 *********************/
@@ -2271,9 +2276,6 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
-  .wrap {
-    width: 1040px;
-  }
 }
 
 /*********************
