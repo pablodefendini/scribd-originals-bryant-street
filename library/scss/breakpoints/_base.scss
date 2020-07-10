@@ -190,16 +190,27 @@ HEADER STYLES
 
 #inner-header {
 		display: flex;
-		padding: .75em 0 .75em;
-		justify-content: space-between;
+		padding: .75em 0 0;
+		justify-content: flex-start;
 		.sign-and-nav {
 			display: flex;
 		}
+		a {
+			width: 263px;
+		}
+		div {
+			flex-grow: 1;
+			form {
+				float: right;
+			}
+		}
 		nav {
-			align-self: center;
 			margin-left: .5em;
-			text-align: right;
+			//padding-left: 7em;
 			width: 7em;
+			label {
+				float: right;
+			}
 		}
 	}
 
@@ -319,6 +330,7 @@ and more scalable.
 #hamitems {
 	display: none;
 	text-align: right;
+	margin-top: 4em;
 	li {
 		margin: 1em 0;
 		a {

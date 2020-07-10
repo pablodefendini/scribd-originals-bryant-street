@@ -59,7 +59,7 @@
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 
-					<div class="sign-and-nav">
+					<!--div class="sign-and-nav"-->
 
 						<?php  if ( is_page('Bryant Street Pub Newsletter') ) { ?>
 						<?php  } else { ?>
@@ -91,7 +91,7 @@
 						</nav>
 
 						</nav>
-					</div>
+					<!--/div-->
 
 				</div>
 
