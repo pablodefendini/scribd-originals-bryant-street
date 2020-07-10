@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Homepage
+ Template Name: About Us Page
 */
 ?>
 
@@ -25,7 +25,7 @@
 
 						</main>
 
-						<?php // get_sidebar(); ?>
+						<?php get_sidebar(); ?>
 
 				</div>
 

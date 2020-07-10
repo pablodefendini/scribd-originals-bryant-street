@@ -6,7 +6,7 @@
 				<div class="signup wrap cf">
 					<div class="call-to-action">
 						<h2>Sign up for our newsletter</h2>
-						<h3>CTA Body  TK</h3>
+						<h3>Sign up for our newsletter to get all the news in your inbox.</h3>
 					</div>
 
 					<!-- Begin Mailchimp Signup Form -->

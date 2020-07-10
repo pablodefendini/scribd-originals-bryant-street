@@ -103,26 +103,27 @@ POSTS & CONTENT STYLES
 
 } /* end .entry-content */
 
+
+/*********************
+EMAIL FORM STYLES
+*********************/
+
+.signup {
+	display: flex;
+	justify-content: space-between;
+	#mc_embed_signup {
+		margin: 2em 0 0 1em;
+	}
+}
+
 /*********************
 FOOTER STYLES
 *********************/
-
-/*
-check your menus here. do they look good?
-do they need tweaking?
-*/
 
 .footer {
 	img {
 		margin: 1em 0;
 		max-width: 260px;
-	}
-	.signup {
-		display: flex;
-		justify-content: space-between;
-		#mc_embed_signup {
-			margin: 2em 0 0 1em;
-		}
 	}
 	.footer-nav {
 		display: flex;

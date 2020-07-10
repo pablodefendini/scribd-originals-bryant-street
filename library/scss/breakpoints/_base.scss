@@ -124,6 +124,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
+	margin: 0;
 }
 
 h2, .h2 {
@@ -152,7 +153,7 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.header {
+.header, .page-header {
 	background-color: $black;
 	@include css-gradient($from: $key-color, $to: $key-color-two);
 	mix-blend-mode: multiply;
@@ -161,6 +162,30 @@ HEADER STYLES
 	#mc_embed_signup_scroll {
 		display: none;
 	}
+}
+
+.page-header {
+	padding: 1em 0;
+	#mc_embed_signup_scroll {
+		display: flex;
+	}
+	.wrap {
+		//display: flex;
+		//flex-wrap: wrap;
+		h1 {
+			flex-basis: 100%;
+		}
+		p {
+			flex-basis: 50%;
+		}
+		div {
+			flex-basis: 50%;
+		}
+	}
+}
+
+.reverse {
+	color: $white;
 }
 
 #inner-header {
@@ -556,6 +581,39 @@ POSTS & CONTENT STYLES
 	}
 
 /******************************************************************
+ARCHIVE PAGE STYLES
+******************************************************************/
+
+.newsletter-archive {
+	max-width: 38em;
+	margin: 0 auto;
+	div {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	li {
+		margin: 1em 0 0 0;
+		padding: 0 0 1em 0;
+		border-bottom: $border-dark;
+		img {
+			float: left;
+			margin: 0 1em 0 0;
+		}
+		a {
+			font-size: 1.5em;
+			&:last-child {
+				font-size: 1em;
+			}
+		}
+		time {
+			text-transform: uppercase;
+			font-weight: 900;
+			padding: 0 0 .5em 0;
+		}
+	}
+}
+
+/******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
 
@@ -923,6 +981,17 @@ SIDEBARS & ASIDES
 		margin-bottom: 1.5em;
 	}
 
+	/*********************
+	EMAIL FORM STYLES
+	*********************/
+
+	#mc_embed_signup_scroll {
+		display: flex;
+		flex-wrap: nowrap;
+		margin-bottom: 1em;
+	}
+
+
 /*********************
 FOOTER STYLES
 *********************/
@@ -931,10 +1000,6 @@ FOOTER STYLES
 	color: $white;
 	background-color: $black;
 	@include css-gradient($from: $key-color, $to: $key-color-two);
-	#mc_embed_signup_scroll {
-		display: flex;
-		margin-bottom: 1em;
-	}
 
 	h2 {
 		margin-bottom: 0;
