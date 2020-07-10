@@ -73,6 +73,7 @@ LAYOUT & GRID STYLES
 .wrap {
 	width: 96%;
 	margin: 0 auto;
+	max-width: 72em;
 }
 
 /*********************
@@ -192,6 +193,7 @@ HEADER STYLES
 		display: flex;
 		padding: .75em 0 0;
 		justify-content: flex-start;
+		max-width: 72em;
 		.sign-and-nav {
 			display: flex;
 		}
@@ -1064,3 +1066,14 @@ FOOTER STYLES
 		padding-bottom: 4em;
 		margin-bottom: -2em;
 	}
+
+
+.side-toc {
+	margin: 1em auto;
+	max-width: 64em;
+	label {
+		@extend %menu-text;
+		color: $text-color;
+		text-decoration: none;
+	}
+}

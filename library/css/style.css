@@ -580,7 +580,7 @@ p {
   font-feature-settings: "liga", "dlig";
 }
 
-.footer #footeritems li a, #hamitems li a, #submit, .comment-reply-link, input[type="submit"] {
+.side-toc label, .footer #footeritems li a, #hamitems li a, #submit, .comment-reply-link, input[type="submit"] {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1403,6 +1403,7 @@ LAYOUT & GRID STYLES
 .wrap {
   width: 96%;
   margin: 0 auto;
+  max-width: 72em;
 }
 
 /*********************
@@ -1519,6 +1520,7 @@ HEADER STYLES
   display: flex;
   padding: .75em 0 0;
   justify-content: flex-start;
+  max-width: 72em;
 }
 
 #inner-header .sign-and-nav {
@@ -2166,6 +2168,16 @@ FOOTER STYLES
   margin-bottom: -2em;
 }
 
+.side-toc {
+  margin: 1em auto;
+  max-width: 64em;
+}
+
+.side-toc label {
+  color: #5c6b80;
+  text-decoration: none;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -2195,6 +2207,18 @@ You can't use @extend within media queries
 anymore, so just be aware that if you drop
 them in here, they won't work.
 */
+  .side-toc {
+    display: flex;
+  }
+  .side-toc div {
+    min-width: 12em;
+  }
+  .side-toc article {
+    max-width: 40em;
+  }
+  .side-toc article h2 {
+    margin-top: 0;
+  }
   /*********************
 NAVIGATION STYLES
 *********************/
