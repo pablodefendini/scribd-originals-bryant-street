@@ -154,10 +154,10 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.header, .page-header {
-	background-color: $black;
+.header, .page-header, .hero {
+	background-color: $key-color-two;
 	@include css-gradient($from: $key-color, $to: $key-color-two);
-	mix-blend-mode: multiply;
+	//mix-blend-mode: multiply;
 	//overflow: visible;
 	//max-height: 63px;
 	#mc_embed_signup_scroll {

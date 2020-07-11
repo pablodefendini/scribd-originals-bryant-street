@@ -62,6 +62,7 @@
 					<!--div class="sign-and-nav"-->
 
 						<?php  if ( is_page('Bryant Street Pub Newsletter') ) { ?>
+							<div></div>
 						<?php  } else { ?>
 
 							<!-- Begin Mailchimp Signup Form -->
