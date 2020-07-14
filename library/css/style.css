@@ -491,8 +491,8 @@ span.amp {
 }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Variables
 
@@ -513,8 +513,8 @@ use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Typography
 
@@ -592,8 +592,8 @@ p {
 }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Sass Functions
 
@@ -637,8 +637,8 @@ both compile to:
 width: 65%;
 *********************/
 /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Mixins Stylesheet
 
@@ -679,8 +679,8 @@ BOX SIZING
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Grid Stylesheet
 
@@ -962,8 +962,8 @@ you can just remove this stylesheet.
 }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Button Styles
 
@@ -1010,8 +1010,8 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Carousel Styles
 
@@ -1026,8 +1026,8 @@ BOOK CAROUSEL STYLES
 }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Form Styles
 
@@ -1477,18 +1477,17 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
-.header, .page-header {
-  background-color: #323944;
+.header, .page-header, .hero {
+  background-color: #630460;
   background-color: #630460;
   background-image: -webkit-gradient(linear, 276.22deg, from(#ED1F5A), to(#630460));
   background-image: -webkit-linear-gradient(276.22deg, #ED1F5A, #630460);
   background-image: -moz-linear-gradient(276.22deg, #ED1F5A, #630460);
   background-image: -o-linear-gradient(276.22deg, #ED1F5A, #630460);
   background-image: linear-gradient(276.22deg, #ED1F5A, #630460);
-  mix-blend-mode: multiply;
 }
 
-.header #mc_embed_signup_scroll, .page-header #mc_embed_signup_scroll {
+.header #mc_embed_signup_scroll, .page-header #mc_embed_signup_scroll, .hero #mc_embed_signup_scroll {
   display: none;
 }
 
@@ -2186,8 +2185,8 @@ tweeners.
 *********************/
 @media only screen and (min-width: 481px) {
   /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: 481px and Up Stylesheet
 
@@ -2209,6 +2208,12 @@ them in here, they won't work.
 */
   .side-toc {
     display: flex;
+  }
+  .side-toc label, .side-toc ul {
+    position: fixed;
+  }
+  .side-toc ul {
+    margin: 2em 0 0;
   }
   .side-toc div {
     min-width: 12em;
@@ -2309,8 +2314,8 @@ you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 768px) {
   /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -2464,8 +2469,8 @@ you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 1030px) {
   /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Desktop Stylsheet
 
@@ -2481,8 +2486,8 @@ This is for the larger monitors and possibly full screen viewers.
 *********************/
 @media only screen and (min-width: 1240px) {
   /******************************************************************
-Site Name: 
-Author: 
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Super Large Monitor Stylesheet
 
@@ -2500,8 +2505,8 @@ query for retina AND a certain size if you want. Go Nuts.
 *********************/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /******************************************************************
-Site Name:
-Author: 
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Retina Screens & Devices Stylesheet
 
@@ -2549,9 +2554,6 @@ be set to display none.
 *********************/
 @media print {
   /******************************************************************
-Site Name:
-Author:
-
 Stylesheet: Print Stylesheet
 
 This is the print stylesheet. There's probably not a lot

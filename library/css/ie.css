@@ -18,8 +18,8 @@ understand (what's inside the media queries). We also need to
 import the mixins file so SASS can understand the variables.
 ******************************************************************/
 /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Variables
 
@@ -40,8 +40,8 @@ use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Typography
 
@@ -108,8 +108,8 @@ p {
 }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Mixins Stylesheet
 
@@ -150,8 +150,8 @@ BOX SIZING
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: IE Grid Styles
 
@@ -164,8 +164,8 @@ whatever you use in here.
 
 ******************************************************************/
 /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: 481px and Up Stylesheet
 
@@ -305,8 +305,8 @@ FOOTER STYLES
 
 /* end .footer-links */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -469,8 +469,8 @@ mobile. Make sure to double check these!
 
 /* end .footer-links */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Bryant Street Publishing
+Author: Pablo Defendini, for Supergreen
 
 Stylesheet: Desktop Stylsheet
 
