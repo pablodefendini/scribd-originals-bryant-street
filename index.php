@@ -66,7 +66,7 @@
 
 						</main>
 
-					<?php get_sidebar(); ?>
+			
 
 				</div>
 
