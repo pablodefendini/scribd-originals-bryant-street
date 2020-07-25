@@ -1,0 +1,32 @@
+.bookshelf {
+  max-width: 800px;
+  margin: 0 auto;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    @media only screen and (min-width: 481px) {
+      flex-wrap: nowrap;
+    }
+    li {
+      margin: 0 0 1em;
+      width: 40%;
+      @media only screen and (min-width: 481px) {
+        margin: 0 .5em 1em;
+      }
+      figure {
+        img {
+          width: 100%;
+        }
+      }
+      h1 {
+        font-size: 1em;
+      }
+      p {
+        font-size: .8em;
+        margin: 0;
+      }
+    }
+  }
+}
