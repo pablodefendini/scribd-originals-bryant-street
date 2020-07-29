@@ -39,3 +39,46 @@
   font-size: .8em;
   margin: 0;
 }
+
+.ad h1 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.ad p {
+  margin-top: 0;
+}
+
+.ad-horizontal-large {
+  max-width: 900px;
+  height: 250px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.ad-horizontal {
+  max-width: 728px;
+  height: 90px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.ad-vertical {
+  max-width: 250px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.ad-module > div {
+  padding-top: 1em;
+}
+
+.ad-module .ad-horizontal {
+  margin-bottom: 1em;
+  min-height: 142px;
+}
+
+.ad-module .ad-vertical {
+  max-width: 550px;
+}
