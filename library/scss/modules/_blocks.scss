@@ -1,4 +1,7 @@
 @import "../partials/variables";
+@import "../partials/typography";
+@import "../partials/mixins";
+@import "../modules/buttons";
 
 .bookshelf {
   max-width: 800px;
@@ -29,6 +32,17 @@
         font-size: .8em;
         margin: 0;
       }
+    }
+  }
+  &-links {
+    @media only screen and (min-width: 580px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    margin-top: .4em;
+    p {
+      @extend %btn;
+      padding: .4em;
     }
   }
 }
