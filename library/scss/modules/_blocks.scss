@@ -1,3 +1,5 @@
+@import "../partials/variables";
+
 .bookshelf {
   max-width: 800px;
   margin: 0 auto;
@@ -33,9 +35,12 @@
 
 
 .ad {
+  color: $white;
+  text-align: center;
   h1 {
     font-size: 1.8em;
     text-transform: uppercase;
+    font-weight: 900;
   }
   p {
     margin-top: 0;
