@@ -238,12 +238,13 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 @media only screen and (min-width: 580px) {
   .bookshelf-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
 .bookshelf-links p {
   padding: .4em;
+  margin: .2em;
 }
 
 .ad {
