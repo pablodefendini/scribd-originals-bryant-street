@@ -12,7 +12,7 @@
 					<!-- Begin Mailchimp Signup Form -->
 
 					<div id="mc_embed_signup">
-						<form action="FIXME" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<form action="https://bryantstreetpub.us17.list-manage.com/subscribe/post?u=494eab8650d545c29ccbdd962&amp;id=a7c855f18e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 								<div id="mc_embed_signup_scroll">
 							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Newsletter signup" required>
 								<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
