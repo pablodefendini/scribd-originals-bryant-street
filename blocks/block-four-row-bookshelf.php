@@ -2,7 +2,7 @@
   <ul>
     <li class="book">
       <figure>
-        <img src="<?php block_field( 'book-1-cover' ); ?>"/>
+        <a href="<?php block_field( 'book-1-link' ); ?>"><img src="<?php block_field( 'book-1-cover' ); ?>"/></a>
       </figure>
       <h1><a href="<?php block_field( 'book-1-link' ); ?>"><?php block_field( 'book-1-title' ); ?></a></h1>
       <p><?php block_field( 'book-1-byline' ); ?></p>
@@ -14,7 +14,7 @@
     </li>
     <li class="book">
       <figure>
-        <img src="<?php block_field( 'book-2-cover' ); ?>"/>
+        <a href="<?php block_field( 'book-2-link' ); ?>"><img src="<?php block_field( 'book-2-cover' ); ?>"/></a>
       </figure>
       <h1><a href="<?php block_field( 'book-2-link' ); ?>"><?php block_field( 'book-2-title' ); ?></a></h1>
       <p><?php block_field( 'book-2-byline' ); ?></p>
@@ -26,7 +26,7 @@
     </li>
     <li class="book">
       <figure>
-        <img src="<?php block_field( 'book-3-cover' ); ?>"/>
+        <a href="<?php block_field( 'book-3-link' ); ?>"><img src="<?php block_field( 'book-3-cover' ); ?>"/></a>
       </figure>
       <h1><a href="<?php block_field( 'book-3-link' ); ?>"><?php block_field( 'book-3-title' ); ?></a></h1>
       <p><?php block_field( 'book-3-byline' ); ?></p>
@@ -38,7 +38,7 @@
     </li>
     <li class="book">
       <figure>
-        <img src="<?php block_field( 'book-4-cover' ); ?>"/>
+        <a href="<?php block_field( 'book-4-link' ); ?>"><img src="<?php block_field( 'book-4-cover' ); ?>"/></a>
       </figure>
       <h1><a href="<?php block_field( 'book-4-link' ); ?>"><?php block_field( 'book-4-title' ); ?></a></h1>
       <p><?php block_field( 'book-4-byline' ); ?></p>
