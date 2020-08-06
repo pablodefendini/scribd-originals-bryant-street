@@ -97,6 +97,20 @@ NAVIGATION STYLES
 		} /* end .menu ul */
 	} /* end .menu */
 
+	#hamitems {
+		li {
+			margin: 0 1em 0;
+			text-align: center;
+		}
+	}
+
+	#hamburger:checked ~ #hamitems {
+		display: flex;
+		margin-left: -17em;
+		//position: static;
+	}
+
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/

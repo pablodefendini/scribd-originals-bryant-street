@@ -237,6 +237,16 @@ NAVIGATION STYLES
 }
 
 /* end .menu */
+#hamitems li {
+  margin: 0 1em 0;
+  text-align: center;
+}
+
+#hamburger:checked ~ #hamitems {
+  display: flex;
+  margin-left: -17em;
+}
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -413,6 +423,10 @@ NAVIGATION STYLES
 }
 
 /* end .nav */
+#inner-header nav {
+  width: 20em;
+}
+
 /*********************
 SIDEBARS & ASIDES
 *********************/

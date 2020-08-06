@@ -55,6 +55,15 @@
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo home_url(); ?>/wp-content/themes/scribd-originals-bryant-street/library/images/logo.svg" id=logo ></a>
 
+					<nav id="#hamnav" role="navigation">
+
+						<label for="hamburger" id="hamburgericon">&#9776;</label>
+						<input type="checkbox" id="hamburger"/>
+
+						<?php wp_nav_menu(array('menu' => __( 'Main Menu'), 'theme_location' => 'main_nav', 'container' => '', 'menu_id' => 'hamitems')); ?>
+
+					</nav>
+					
 					<?php  if ( is_page('Bryant Street Pub Newsletter') ) { ?>
 					<div></div>
 					<?php  } else { ?>
@@ -71,15 +80,6 @@
 					</div>
 					<!--End mc_embed_signup-->
 					<?php  } ?>
-
-					<nav id="#hamnav" role="navigation">
-
-						<label for="hamburger" id="hamburgericon">&#9776;</label>
-    				<input type="checkbox" id="hamburger"/>
-
-						<?php wp_nav_menu(array('menu' => __( 'Main Menu'), 'theme_location' => 'main_nav', 'container' => '', 'menu_id' => 'hamitems')); ?>
-
-					</nav>
 
 				</div>
 
