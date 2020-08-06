@@ -88,7 +88,7 @@ p {
   font-feature-settings: "liga", "dlig";
 }
 
-.bookshelf-links p {
+.bookshelf-links p, .bookshelf-links img {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -165,7 +165,7 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.bookshelf-links p {
+.bookshelf-links p, .bookshelf-links img {
   display: inline-block;
   position: relative;
   text-decoration: none;
@@ -178,14 +178,14 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   transition: background-color 0.14s ease-in-out;
 }
 
-.bookshelf-links p:hover, .bookshelf-links p:focus {
+.bookshelf-links p:hover, .bookshelf-links img:hover, .bookshelf-links p:focus, .bookshelf-links img:focus {
   color: #fff;
   text-decoration: none;
   outline: none;
   background-color: #630460;
 }
 
-.bookshelf-links p:active {
+.bookshelf-links p:active, .bookshelf-links img:active {
   top: 1px;
 }
 
@@ -238,13 +238,18 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 @media only screen and (min-width: 580px) {
   .bookshelf-links {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 
-.bookshelf-links p {
+.bookshelf-links p, .bookshelf-links img {
   padding: .4em;
-  margin: .2em;
+}
+
+.bookshelf-links img {
+  padding: .5em;
+  height: 35px;
+  margin-right: .4em;
 }
 
 .ad {

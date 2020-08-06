@@ -37,13 +37,17 @@
   &-links {
     @media only screen and (min-width: 580px) {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
     }
     margin-top: .4em;
-    p {
+    p, img {
       @extend %btn;
       padding: .4em;
-      margin: .2em;
+    }
+    img {
+      padding: .5em;
+      height: 35px;
+      margin-right: .4em;
     }
   }
 }
