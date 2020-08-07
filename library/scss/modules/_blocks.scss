@@ -4,7 +4,7 @@
 @import "../modules/buttons";
 
 .bookshelf {
-  max-width: 800px;
+  max-width: 820px;
   margin: 0 auto;
   ul {
     display: flex;
@@ -48,6 +48,13 @@
       padding: .5em;
       height: 35px;
       margin-right: .4em;
+    }
+    svg {
+      width: 20px;
+      margin-right: 1em;
+      path {
+        fill: $link-color !important;
+      }
     }
   }
 }
