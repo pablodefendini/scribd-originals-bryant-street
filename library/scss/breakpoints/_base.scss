@@ -154,7 +154,7 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.header, .page-header, .hero {
+.header, .page-header, .hero, .divider {
 	background-color: $key-color-two;
 	@include css-gradient($from: $key-color, $to: $key-color-two);
 	//mix-blend-mode: multiply;
@@ -1023,6 +1023,10 @@ FOOTER STYLES
 	}
 	h3 {
 		margin-top: 0;
+	}
+
+	a {
+		color: $white;
 	}
 
 	img {

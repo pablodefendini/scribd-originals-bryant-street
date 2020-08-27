@@ -1477,7 +1477,7 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
-.header, .page-header, .hero {
+.header, .page-header, .hero, .divider {
   background-color: #630460;
   background-color: #630460;
   background-image: -webkit-gradient(linear, 276.22deg, from(#ED1F5A), to(#630460));
@@ -1487,7 +1487,7 @@ HEADER STYLES
   background-image: linear-gradient(276.22deg, #ED1F5A, #630460);
 }
 
-.header #mc_embed_signup_scroll, .page-header #mc_embed_signup_scroll, .hero #mc_embed_signup_scroll {
+.header #mc_embed_signup_scroll, .page-header #mc_embed_signup_scroll, .hero #mc_embed_signup_scroll, .divider #mc_embed_signup_scroll {
   display: none;
 }
 
@@ -2121,6 +2121,10 @@ FOOTER STYLES
   margin-top: 0;
 }
 
+.footer a {
+  color: #fff;
+}
+
 .footer img {
   margin: 1em 0;
   width: 100%;
@@ -2208,7 +2212,7 @@ them in here, they won't work.
     margin: 2em 0 0;
   }
   .side-toc div {
-    min-width: 12em;
+    min-width: 13em;
   }
   .side-toc article {
     max-width: 40em;
