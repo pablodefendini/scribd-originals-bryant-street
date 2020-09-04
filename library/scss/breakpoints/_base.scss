@@ -191,8 +191,10 @@ HEADER STYLES
 .reverse {
 	color: $white;
 }
-
-#inner-header {
+#inner-footer {
+	flex-direction: column;
+}
+#inner-header, #inner-footer {
 		display: flex;
 		padding: .75em 0 0;
 		justify-content: flex-start;
@@ -212,7 +214,7 @@ HEADER STYLES
 		nav {
 			margin-left: 1em;
 			//padding-left: 7em;
-			width: 20em;
+			//width: 20em;
 			label {
 				//float: right;
 			}
@@ -281,10 +283,11 @@ and more scalable.
 		ul.sub-menu,
 		ul.children {
 
+
 			li {
 
 				a {
-					//padding-left: 30px;
+
 
 					&:hover,
 					&:focus {}
@@ -334,8 +337,21 @@ and more scalable.
 /* Toggle Show/Hide Menu */
 #hamitems {
 	display: none;
+}
+#hamitems, #footeritems {
 	//text-align: right;
 	//margin-top: 3em;
+	.submenu {
+		display: flex;
+		flex-direction: column;
+	}
+	.sub-menu li {
+		padding-left: .5em;
+		&:before {
+			content: '• ';
+			color: $white;
+		}
+	}
 	li {
 		margin: 1em 0;
 		line-height: 0;
@@ -363,31 +379,7 @@ POSTS & CONTENT STYLES
 	//margin-top: -5em;
 }
 
-#content {
-	//margin-top: 1.5em;
-}
-
-		.hentry {
-			background-color: $white;
-			//border-radius: 3px;
-			//margin-bottom: 1.5em;
-			//border: 1px solid $border-color;
-
-			header {
-				border-bottom: 1px solid $light-gray;
-				padding: 1.5em;
-			}
-
-			footer {
-				padding: 1.5em;
-				border-top: 1px solid $light-gray;
-
-				p {
-					margin: 0;
-				}
-			}
-
-		} /* end .hentry */
+ /* end .hentry */
 
 		.single-title,
 		.page-title,

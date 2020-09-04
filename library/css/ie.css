@@ -212,41 +212,6 @@ them in here, they won't work.
 /*********************
 NAVIGATION STYLES
 *********************/
-/* .menu is clearfixed inside mixins.scss */
-.menu {
-  /* end .menu ul */
-}
-
-.menu ul {
-  /* end .menu ul li */
-  /* highlight current page */
-  /* end current highlighters */
-}
-
-.menu ul li {
-  /*
-				plan your menus and drop-downs wisely.
-				*/
-}
-
-.menu ul li a {
-  /*
-					you can use hover styles here even though this size
-					has the possibility of being a mobile device.
-					*/
-}
-
-/* end .menu */
-#hamitems li {
-  margin: 0 1em 0;
-  text-align: center;
-}
-
-#hamburger:checked ~ #hamitems {
-  display: flex;
-  margin-left: -17em;
-}
-
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -290,30 +255,6 @@ EMAIL FORM STYLES
 /*********************
 FOOTER STYLES
 *********************/
-.footer img {
-  margin: 1em 0;
-  max-width: 260px;
-}
-
-.footer .footer-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer .footer-nav ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-.footer .footer-nav ul li {
-  margin: .4em 0;
-}
-
-.footer .footer-nav ul li a {
-  margin: 1em .5em;
-}
-
-/* end .footer-links */
 /******************************************************************
 Site Name: Bryant Street Publishing
 Author: Pablo Defendini, for Supergreen
@@ -379,12 +320,6 @@ NAVIGATION STYLES
 
 .nav li ul.sub-menu,
 .nav li ul.children {
-  margin-top: 0;
-  border: 1px solid #ccc;
-  border-top: 0;
-  position: absolute;
-  visibility: hidden;
-  z-index: 8999;
   /* highlight sub-menu current page */
 }
 
@@ -395,15 +330,6 @@ NAVIGATION STYLES
 				just remember deeper menus suck
 				for usability. k, bai.
 				*/
-}
-
-.nav li ul.sub-menu li a,
-.nav li ul.children li a {
-  padding-left: 10px;
-  border-right: 0;
-  display: block;
-  width: 180px;
-  border-bottom: 1px solid #ccc;
 }
 
 .nav li ul.sub-menu li:last-child a,
@@ -423,8 +349,34 @@ NAVIGATION STYLES
 }
 
 /* end .nav */
-#inner-header nav {
-  width: 20em;
+#hamitems li {
+  margin: 0 1em 0;
+  text-align: left;
+}
+
+#hamitems .sub-menu li {
+  padding-left: 0;
+  margin-left: .4em;
+  padding-bottom: 1em;
+}
+
+#footeritems {
+  display: flex;
+}
+
+#footeritems li {
+  text-align: left;
+  width: 8.5em;
+}
+
+#footeritems .sub-menu li {
+  padding-left: 0;
+  margin-left: .4em;
+}
+
+#hamburger:checked ~ #hamitems {
+  display: flex;
+  margin-left: -17em;
 }
 
 /*********************

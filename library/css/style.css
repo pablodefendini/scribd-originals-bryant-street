@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! Made with Bones: http://themble.com/bones :) */
 /******************************************************************
 Site Name: Bryant Street Publishing
@@ -580,7 +581,7 @@ p {
   font-feature-settings: "liga", "dlig";
 }
 
-.side-toc label, .footer #footeritems li a, #hamitems li a, #submit, .comment-reply-link, input[type="submit"] {
+.side-toc label, .footer #footeritems li a, #hamitems li a, #footeritems li a, #submit, .comment-reply-link, input[type="submit"] {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1519,28 +1520,31 @@ HEADER STYLES
   color: #fff;
 }
 
-#inner-header {
+#inner-footer {
+  flex-direction: column;
+}
+
+#inner-header, #inner-footer {
   display: flex;
   padding: .75em 0 0;
   justify-content: flex-start;
   max-width: 72em;
 }
 
-#inner-header a {
+#inner-header a, #inner-footer a {
   width: 263px;
 }
 
-#inner-header div {
+#inner-header div, #inner-footer div {
   flex-grow: 1;
 }
 
-#inner-header div form {
+#inner-header div form, #inner-footer div form {
   float: right;
 }
 
-#inner-header nav {
+#inner-header nav, #inner-footer nav {
   margin-left: 1em;
-  width: 20em;
 }
 
 #logo a {
@@ -1610,7 +1614,21 @@ and more scalable.
   display: none;
 }
 
-#hamitems li {
+#hamitems .submenu, #footeritems .submenu {
+  display: flex;
+  flex-direction: column;
+}
+
+#hamitems .sub-menu li, #footeritems .sub-menu li {
+  padding-left: .5em;
+}
+
+#hamitems .sub-menu li:before, #footeritems .sub-menu li:before {
+  content: '• ';
+  color: #fff;
+}
+
+#hamitems li, #footeritems li {
   margin: 1em 0;
   line-height: 0;
   text-align: left;
@@ -1633,24 +1651,6 @@ POSTS & CONTENT STYLES
   background-image: -o-linear-gradient(276.22deg, #ED1F5A, #630460);
   background-image: linear-gradient(276.22deg, #ED1F5A, #630460);
   mix-blend-mode: multiply;
-}
-
-.hentry {
-  background-color: #fff;
-}
-
-.hentry header {
-  border-bottom: 1px solid #f8f9fa;
-  padding: 1.5em;
-}
-
-.hentry footer {
-  padding: 1.5em;
-  border-top: 1px solid #f8f9fa;
-}
-
-.hentry footer p {
-  margin: 0;
 }
 
 /* end .hentry */
@@ -2227,35 +2227,6 @@ them in here, they won't work.
   /*********************
 NAVIGATION STYLES
 *********************/
-  /* .menu is clearfixed inside mixins.scss */
-  .menu {
-    /* end .menu ul */
-  }
-  .menu ul {
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */
-  }
-  .menu ul li {
-    /*
-				plan your menus and drop-downs wisely.
-				*/
-  }
-  .menu ul li a {
-    /*
-					you can use hover styles here even though this size
-					has the possibility of being a mobile device.
-					*/
-  }
-  /* end .menu */
-  #hamitems li {
-    margin: 0 1em 0;
-    text-align: center;
-  }
-  #hamburger:checked ~ #hamitems {
-    display: flex;
-    margin-left: -17em;
-  }
   /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -2293,25 +2264,6 @@ EMAIL FORM STYLES
   /*********************
 FOOTER STYLES
 *********************/
-  .footer img {
-    margin: 1em 0;
-    max-width: 260px;
-  }
-  .footer .footer-nav {
-    display: flex;
-    justify-content: space-between;
-  }
-  .footer .footer-nav ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  .footer .footer-nav ul li {
-    margin: .4em 0;
-  }
-  .footer .footer-nav ul li a {
-    margin: 1em .5em;
-  }
-  /* end .footer-links */
 }
 
 /*********************
@@ -2380,12 +2332,6 @@ NAVIGATION STYLES
   }
   .nav li ul.sub-menu,
 .nav li ul.children {
-    margin-top: 0;
-    border: 1px solid #ccc;
-    border-top: 0;
-    position: absolute;
-    visibility: hidden;
-    z-index: 8999;
     /* highlight sub-menu current page */
   }
   .nav li ul.sub-menu li,
@@ -2395,14 +2341,6 @@ NAVIGATION STYLES
 				just remember deeper menus suck
 				for usability. k, bai.
 				*/
-  }
-  .nav li ul.sub-menu li a,
-.nav li ul.children li a {
-    padding-left: 10px;
-    border-right: 0;
-    display: block;
-    width: 180px;
-    border-bottom: 1px solid #ccc;
   }
   .nav li ul.sub-menu li:last-child a,
 .nav li ul.children li:last-child a {
@@ -2418,8 +2356,29 @@ NAVIGATION STYLES
     visibility: visible;
   }
   /* end .nav */
-  #inner-header nav {
-    width: 20em;
+  #hamitems li {
+    margin: 0 1em 0;
+    text-align: left;
+  }
+  #hamitems .sub-menu li {
+    padding-left: 0;
+    margin-left: .4em;
+    padding-bottom: 1em;
+  }
+  #footeritems {
+    display: flex;
+  }
+  #footeritems li {
+    text-align: left;
+    width: 8.5em;
+  }
+  #footeritems .sub-menu li {
+    padding-left: 0;
+    margin-left: .4em;
+  }
+  #hamburger:checked ~ #hamitems {
+    display: flex;
+    margin-left: -17em;
   }
   /*********************
 SIDEBARS & ASIDES
