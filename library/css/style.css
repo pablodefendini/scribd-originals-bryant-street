@@ -1547,6 +1547,14 @@ HEADER STYLES
   margin-left: 1em;
 }
 
+#inner-header nav .menu-item-has-children a, #inner-footer nav .menu-item-has-children a {
+  text-decoration: none;
+}
+
+#inner-header nav .menu-item-has-children ul li a, #inner-footer nav .menu-item-has-children ul li a {
+  text-decoration: underline;
+}
+
 #logo a {
   color: #fff;
 }

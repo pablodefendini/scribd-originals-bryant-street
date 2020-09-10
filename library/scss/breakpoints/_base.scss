@@ -210,10 +210,15 @@ HEADER STYLES
 		}
 		nav {
 			margin-left: 1em;
-			//padding-left: 7em;
-			//width: 20em;
 			label {
-				//float: right;
+			}
+			.menu-item-has-children {
+				a {
+					text-decoration: none;
+				}
+				ul li a {
+					text-decoration: underline;
+				}
 			}
 		}
 	}
