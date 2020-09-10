@@ -174,8 +174,8 @@ HEADER STYLES
 		display: flex;
 	}
 	.wrap {
-		//display: flex;
-		//flex-wrap: wrap;
+		max-width: 1000px;
+		margin: 0 auto;
 		h1 {
 			flex-basis: 100%;
 		}

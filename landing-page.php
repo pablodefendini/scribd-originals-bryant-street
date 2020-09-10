@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Generic Page
+ Template Name: Generic Landing Page
 */
 ?>
 
@@ -13,6 +13,13 @@
 	<div>
 
 			<main id="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+
+				<section class="page-header reverse">
+					<div class="wrap">
+						<h1><?php the_title(); ?></h1>
+						<p><?php the_excerpt(); ?></p>
+					</div>
+				</section>
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

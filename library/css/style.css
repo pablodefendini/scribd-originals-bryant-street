@@ -1504,6 +1504,11 @@ HEADER STYLES
   display: flex;
 }
 
+.page-header .wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .page-header .wrap h1 {
   flex-basis: 100%;
 }
