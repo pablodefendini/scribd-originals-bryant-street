@@ -2134,10 +2134,6 @@ FOOTER STYLES
   width: 100%;
 }
 
-.footer #footeritems {
-  text-align: right;
-}
-
 .footer #footeritems li {
   margin: 1em 0;
 }
@@ -2365,15 +2361,21 @@ NAVIGATION STYLES
     margin-left: .4em;
     padding-bottom: 1em;
   }
+  #inner-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
   #footeritems {
     display: flex;
+    justify-content: flex-end;
   }
   #footeritems li {
-    text-align: left;
     width: 8.5em;
+    text-align: right;
   }
   #footeritems .sub-menu li {
-    padding-left: 0;
+    text-align: left;
+    padding-left: 1.8em;
     margin-left: .4em;
   }
   #hamburger:checked ~ #hamitems {
