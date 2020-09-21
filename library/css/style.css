@@ -2393,7 +2393,7 @@ NAVIGATION STYLES
     justify-content: flex-start;
   }
   #footeritems li {
-    width: 8.5em;
+    min-width: 8.5em;
   }
   #footeritems .sub-menu li {
     margin-left: .4em;

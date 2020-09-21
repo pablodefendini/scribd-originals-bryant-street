@@ -168,7 +168,7 @@ NAVIGATION STYLES
 	display: flex;
 	justify-content: flex-start;
 	li {
-		width: 8.5em;
+		min-width: 8.5em;
 		//text-align: right;
 	}
 	.sub-menu li {

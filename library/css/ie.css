@@ -387,7 +387,7 @@ NAVIGATION STYLES
 }
 
 #footeritems li {
-  width: 8.5em;
+  min-width: 8.5em;
 }
 
 #footeritems .sub-menu li {
