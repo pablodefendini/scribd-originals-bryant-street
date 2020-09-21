@@ -2183,6 +2183,10 @@ FOOTER STYLES
   max-width: 1000px;
 }
 
+.ugb-block-content {
+  margin: 0 1em;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
