@@ -2306,6 +2306,20 @@ HEADER STYLES
 *********************/
   .header #mc_embed_signup_scroll {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 28em;
+  }
+  .header #mc_embed_signup_scroll h3 {
+    font-size: 1em;
+    min-width: 100%;
+    color: #fff;
+    margin: 0;
+  }
+  #logo, #inner-header nav {
+    margin-top: 1.4em;
+  }
+  #inner-header {
+    padding-bottom: .6em;
   }
   /*********************
 NAVIGATION STYLES
