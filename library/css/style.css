@@ -2183,8 +2183,8 @@ FOOTER STYLES
   max-width: 1000px;
 }
 
-.ugb-block-content {
-  margin: 0 1em;
+.ugb-heading__title, .ugb-heading__subtitle {
+  margin-left: 1em;
 }
 
 /*********************
