@@ -348,7 +348,7 @@ and more scalable.
 		flex-direction: column;
 	}
 	.sub-menu li {
-		padding-left: .5em;
+		//padding-left: .5em;
 		&:before {
 			content: '• ';
 			color: $white;
@@ -1035,6 +1035,7 @@ FOOTER STYLES
 	#footeritems {
 		li {
 			margin: 1em 0;
+			text-align: left;
 			a {
 				@extend %menu-text;
 				padding-top: 1em;

@@ -377,24 +377,20 @@ NAVIGATION STYLES
   padding-bottom: 1em;
 }
 
-#inner-footer {
-  flex-direction: row;
-  justify-content: space-between;
+#inner-footer nav {
+  margin-left: 0;
 }
 
 #footeritems {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 #footeritems li {
   width: 8.5em;
-  text-align: right;
 }
 
 #footeritems .sub-menu li {
-  text-align: left;
-  padding-left: 1.8em;
   margin-left: .4em;
 }
 
