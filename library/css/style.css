@@ -2388,6 +2388,7 @@ NAVIGATION STYLES
   #hamitems li {
     margin: 0 1em 0;
     text-align: left;
+    min-width: 8.5em;
   }
   #hamitems .sub-menu li {
     padding-left: 0;
