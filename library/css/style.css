@@ -1511,6 +1511,7 @@ HEADER STYLES
 
 .page-header .wrap h1 {
   flex-basis: 100%;
+  margin-left: 16px;
 }
 
 .page-header .wrap p {
